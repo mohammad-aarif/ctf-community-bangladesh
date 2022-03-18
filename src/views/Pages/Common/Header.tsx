@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
-        <div className=' bg-slate-900'>
+        <div className='sticky z-10 top-0 position bg-slate-900'>
             <nav>
                 <div className="flex px-12 items-center justify-between">
                     <div className="">

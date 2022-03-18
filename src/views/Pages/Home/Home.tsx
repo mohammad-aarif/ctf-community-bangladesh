@@ -1,12 +1,12 @@
 import React from 'react';
-import TextAnimation from '../../Components/custom/TextAnimation';
+import About from './About';
 import HeaderBanner from './HeaderBanner';
 
 const Home = () => {
     return (
         <div>
             <HeaderBanner />
-            {/* <TextAnimation /> */}
+            <About />
         </div>
     );
 };

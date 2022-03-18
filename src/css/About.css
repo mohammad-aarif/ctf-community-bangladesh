@@ -1,0 +1,42 @@
+.about-background{
+    background: rgba(5,13,13,1);
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+}
+.about-background .outer-circle{
+    height: 25em;
+    width: 25em;
+    position: relative;
+}
+.outer-circle::before {
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    border-radius:50%; 
+    padding:2px; 
+    transform: rotate(5deg);
+    background:linear-gradient(90deg, rgba(0,218,255,1) 0%, rgba(2,0,36,0) 30%, rgba(255,0,0,1) 48%, rgba(0,0,0,0) 77%, rgba(248,255,0,1) 100%); 
+    -webkit-mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude; 
+}
+.about-background .inner-circle{
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+.animate-logo{
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    display: block;
+    width: 20%;
+}

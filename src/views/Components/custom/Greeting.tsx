@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 
 const Greeting = () => {
     const [greetings, setGreetings] = useState('')
-    const time = 19 //new Date().getHours()
+    const time = new Date().getHours()
     useEffect(()=>{
         if(time > 18 && time < 23){
             setGreetings('Good Evening!')

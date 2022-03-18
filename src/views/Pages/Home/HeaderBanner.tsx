@@ -25,7 +25,9 @@ const HeaderBanner = () => {
                 <div className="header-overlay bg-green-800">
                     <div className="banner-text py-60 pl-20">                    
                         <h3 className='text-gray-300'><Greeting /></h3>
+                        <div className="text-white">
                         <TextAnimation toggle={toggle} text='Hack the World!'/>
+                        </div>
                         <h2 className='text-gray-300'>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h2>
                         <PrimaryButton name='Learn More' dict='/'/>
                     </div>
