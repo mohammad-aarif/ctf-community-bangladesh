@@ -1,6 +1,6 @@
 import React from 'react';
 import About from './About';
-import Contact from './Contact';
+import Contact from './Contact.jsx';
 import Events from './Events';
 import HeaderBanner from './HeaderBanner';
 

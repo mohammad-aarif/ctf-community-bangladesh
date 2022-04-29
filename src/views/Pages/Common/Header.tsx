@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 const Header = () => {
     return (
@@ -12,13 +13,10 @@ const Header = () => {
                     <div className=''>
                         <ul className='flex justify-around py-3 text-white'>
                             <li className='px-3 hover:text-green-500'><Link to="/">Home</Link></li>
-                            <li className='px-3 hover:text-green-500'><Link to="/">About</Link></li>
-                            <li className='px-3 hover:text-green-500'><Link to="/">Service</Link></li>
-                            <li className='px-3 hover:text-green-500'><Link to="/">Methodology</Link></li>
+                            <li className='px-3 hover:text-green-500'><HashLink smooth to="/home#about">About</HashLink></li>
                             <li className='px-3 hover:text-green-500'><Link to="/team">Team</Link></li>
-                            <li className='px-3 hover:text-green-500'><Link to="/">Career</Link></li>
-                            <li className='px-3 hover:text-green-500'><Link to="/">Blog</Link></li>
-                            <li className='px-3 hover:text-green-500'><Link to="/">Contact</Link></li>
+                            <li className='px-3 hover:text-green-500'><HashLink smooth to="/home#events">Events</HashLink></li>
+                            <li className='px-3 hover:text-green-500'><HashLink smooth to="/home#contact">Contact</HashLink></li>
                         </ul>
                     </div>
                 </div>

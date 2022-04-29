@@ -3,7 +3,7 @@ import '../../../css/events.css'
 import PrimaryButton from '../../Components/Common/PrimaryButton';
 const Events = () => {
     return (
-        <div className='px-32 py-5'>
+        <div id='events' className='px-32 py-5'>
             <h1 className="text-2xl font-bold text-center">Upcoming Events</h1>
         <div className='px-32 flex items-center justify-center events-section py-5'>
             <div className='px-16' style={{width: '50vw'}}>

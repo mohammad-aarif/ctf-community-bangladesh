@@ -17,7 +17,7 @@ const About = () => {
     })
  
     return (
-        <div className='flex justify-around items-center about-background'>
+        <div id='about' className='flex justify-around items-center about-background'>
             <div className="w-50 py-7 relative px-14">
                 <animated.div style={props} className="outer-circle relative flex items-center justify-center">                   
                 </animated.div>
