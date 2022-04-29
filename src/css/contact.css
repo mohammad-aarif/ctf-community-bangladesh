@@ -1,0 +1,26 @@
+input[type='text'],input[type='email'], textarea{
+    background: transparent;
+    box-sizing: border-box;
+    border:none;
+    border-bottom:1px solid #3f4140;
+    margin:10px 0px;
+    width:100%;
+    outline:none;
+    color:#fff;
+    resize:none;
+}
+input[type='text']:focus, input[type='email']:focus, textarea:focus{
+    border-bottom: 1px solid #00ff7f;
+}
+input[type=submit]{
+    width:100%;
+    text-align:center;
+    color:#525252;
+    border: 1px solid #525252;
+    background: transparent;
+    padding: 8px 0px;
+}
+input[type=submit]:hover{
+    color:#00ff7f;
+    border: 1px solid #00ff7f;
+}

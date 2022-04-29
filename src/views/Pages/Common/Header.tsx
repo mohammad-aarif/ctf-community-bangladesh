@@ -15,7 +15,7 @@ const Header = () => {
                             <li className='px-3 hover:text-green-500'><Link to="/">About</Link></li>
                             <li className='px-3 hover:text-green-500'><Link to="/">Service</Link></li>
                             <li className='px-3 hover:text-green-500'><Link to="/">Methodology</Link></li>
-                            <li className='px-3 hover:text-green-500'><Link to="/">Team</Link></li>
+                            <li className='px-3 hover:text-green-500'><Link to="/team">Team</Link></li>
                             <li className='px-3 hover:text-green-500'><Link to="/">Career</Link></li>
                             <li className='px-3 hover:text-green-500'><Link to="/">Blog</Link></li>
                             <li className='px-3 hover:text-green-500'><Link to="/">Contact</Link></li>
