@@ -11,3 +11,16 @@ declare module 'baffle-react' {
   interface RefObject<T> {
     current: T | any
   }
+
+  type MemberType = {
+    name: string;
+    desc: string;
+    img: string;
+    email: string;
+    role: string;
+    facebook: string;
+    twitter: string;
+    linkedin: string;
+    github: string;
+    score: number;
+}

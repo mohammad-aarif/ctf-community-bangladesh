@@ -1,16 +1,22 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../../../css/Team.css'
-const TeamMembers = () => {
+type MemberIntro ={
+    name: string;
+    img: string;
+    role: string;
+    email: string;
+}
+const TeamMembers: React.FC<MemberIntro> = ({name, role, img, email}) => {
     return (
         <div>
-            <h1>Team Members</h1>
-            <div className="grid grid-cols-4 gap-3 py-16 px-16">
+            <Link to={`/member/${email}`}>
                 <div className="team-member text-center mx-auto">
-                    <img className='team-img' src="https://i.ibb.co/svZfJ6q/wells-chan-l3hwxn-GJXn8-unsplash.jpg" alt="" />
-                    <h1 className="text-3xl font-medium">Name Namee</h1>
-                    <h2 className="text-xl">Position</h2>
+                    <img className='team-img mx-auto' src={img} alt="" />
+                    <h1 className="text-3xl font-medium">{name}</h1>
+                    <h2 className="text-xl">{role}</h2>
                 </div>
-            </div>
+            </Link>
         </div>
     );
 };
