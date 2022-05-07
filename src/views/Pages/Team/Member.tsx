@@ -32,7 +32,8 @@ const Member = () => {
                     <h1 className="font-medium text-2xl">{memberData?.name}</h1>
                     <p className=''>{memberData?.role}</p>
                     <hr />
-                    <h1 className="font-medium text-2xl">About Me</h1>
+                    <br />
+                    <h1 className="font-medium text-xl">About Me</h1>
                     <p>{memberData?.desc}</p>
                     <hr />
                     <br />
