@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import TextAnimation from '../../Components/custom/TextAnimation';
 import { useSpring, animated } from 'react-spring'
-import skull from '../../../assets/svg/matrixskull.svg'
 import logo from '../../../assets/svg/layer1.svg'
 import '../../../css/About.css'
 const About = () => {
@@ -17,15 +16,15 @@ const About = () => {
     })
  
     return (
-        <div id='about' className='flex justify-around items-center about-background'>
-            <div className="w-50 py-7 relative px-14">
-                <animated.div style={props} className="outer-circle relative flex items-center justify-center">                   
+        <div id='about' className='grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-7 about-background'>
+            <div className="my-auto py-7 col-span-3  flex items-center justify-center relative px-14">
+                <animated.div style={props} className="outer-circle">                   
                 </animated.div>
                 <div className="animate-logo">
                     <img src={logo} alt="" />
                 </div>
             </div>
-            <div className="w-50 px-14">
+            <div className="px-14 my-auto col-span-4">
                 <h1 className="text-gray-600 text-xl font-bold">About</h1>
                 <div className="text-green-700">
                     <TextAnimation toggle={flip} text="Ctf Bangladesh" />
