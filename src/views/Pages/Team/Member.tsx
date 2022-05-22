@@ -37,27 +37,59 @@ const Member = () => {
                     <p>{memberData?.desc}</p>
                     <hr />
                     <br />
-                    <div className="flex py-3 field items-center">
-                        <div className="pl-2 font-medium">Email</div>
-                        <div className="pl-16">
+                    <div className="grid py-3 field grid-cols-5 gap-4">
+                        <div className="pl-2 col-span-1 font-medium">Field Of Interest</div>
+                        <div className="pl-3 col-span-4">
+                            <p>{memberData?.interest}</p>
+                        </div>
+                    </div>
+                    <hr />
+                    <br />
+                    <div className="grid py-3 field grid-cols-5 gap-4">
+                        <div className="pl-2 col-span-1 font-medium">Achievment</div>
+                        <div className="pl-3 col-span-4">
+                            <p>{memberData?.achievment}</p>
+                        </div>
+                    </div>
+                    <hr />
+                    <br />
+                    <div className="grid py-3 field grid-cols-5 gap-4">
+                        <div className="pl-2 col-span-1 font-medium">Education</div>
+                        <div className="pl-3 col-span-4">
+                            <p>{memberData?.education}</p>
+                        </div>
+                    </div>
+                    <hr />
+                    <br />
+                    <div className="grid py-3 field grid-cols-5 gap-4">
+                        <div className="pl-2 col-span-1 font-medium">Work Experience</div>
+                        <div className="pl-3 col-span-4">
+                            <p>{memberData?.experience}</p>
+                        </div>
+                    </div>
+                    <hr />
+                    <br />
+                    <div className="grid py-3 field grid-cols-5 gap-4">
+                        <div className="pl-2 col-span-1 font-medium">E-mail</div>
+                        <div className="pl-3 col-span-4">
                             <p>{memberData?.email}</p>
                         </div>
                     </div>
                     <hr />
                     <br />
-                    <div className="flex py-3 field items-center">
-                        <div className="pl-2 font-medium">Score</div>
-                        <div className="pl-16">
-                            <p>{memberData?.score}</p>
+                    <div className="grid py-3 field grid-cols-5 gap-4">
+                        <div className="pl-2 col-span-1 font-medium">Website</div>
+                        <div className="pl-3 col-span-4">
+                            <p>{memberData?.website}</p>
                         </div>
                     </div>
                     <hr />
                     <br />
                     <div className="flex py-3 field items-center">
-                        <a className='pl-3' href={memberData?.github}><BsGithub/></a>
                         <a className='pl-3' href={memberData?.facebook}><BsFacebook/></a>
                         <a className='pl-3' href={memberData?.twitter}><BsTwitter/></a>
                         <a className='pl-3' href={memberData?.linkedin}><BsLinkedin/></a>
+                        <a className='pl-3' href={memberData?.github}><BsGithub/></a>
                     </div>
                     <hr />
                 </div>

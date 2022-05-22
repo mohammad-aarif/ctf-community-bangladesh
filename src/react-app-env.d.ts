@@ -22,5 +22,9 @@ declare module 'baffle-react' {
     twitter: string;
     linkedin: string;
     github: string;
-    score: number;
+    interest: string;
+    education: string;
+    experience: string;
+    website: string;
+    achievment: string;
 }
