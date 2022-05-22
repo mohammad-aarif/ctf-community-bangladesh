@@ -5,12 +5,12 @@ type MemberIntro ={
     name: string;
     img: string;
     role: string;
-    email: string;
+    username: string;
 }
-const TeamMembers: React.FC<MemberIntro> = ({name, role, img, email}) => {
+const TeamMembers: React.FC<MemberIntro> = ({name, role, img, username}) => {
     return (
         <div>
-            <Link to={`/member/${email}`}>
+            <Link to={`/member/${username}`}>
                 <div className="team-member text-center mx-auto">
                     <img className='team-img mx-auto' src={img} alt="" />
                     <h1 className="text-3xl font-medium">{name}</h1>

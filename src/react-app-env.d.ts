@@ -27,4 +27,5 @@ declare module 'baffle-react' {
     experience: string;
     website: string;
     achievment: string;
+    username: string;
 }
