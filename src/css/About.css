@@ -5,8 +5,8 @@
     position: relative;
 }
 .about-background .outer-circle{
-    height: 25em;
-    width: 25em;
+    height: 20em;
+    width: 20em;
     position: relative;
 }
 .outer-circle::before {

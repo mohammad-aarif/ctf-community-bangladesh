@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import '../../../css/contact.css';
 import emailjs from '@emailjs/browser';
-import { FaMapMarkerAlt, FaYoutube } from "react-icons/fa";
+import { FaMapMarkerAlt, FaPhone } from "react-icons/fa";
 import { SiMinutemailer } from "react-icons/si"
 
 import emailImage from '../../../assets/svg/email.svg'
@@ -23,10 +23,10 @@ const Contact = () => {
     };
 
     return (
-        <div id='contact' className='px-32 py-5 bg-slate-900 text-white'>
+        <div style={{padding: '0 20px'}} id='contact' className='lg:px-32 md:px-28 py-5 bg-slate-900 text-white'>
             <h1 className='font-bold text-3xl text-center'>Contact Us</h1>
             <div className="">
-                <div className="grid grid-cols-3 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-2">
+                <div className="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-2">
                     <div className = "px-7 py-3">
                         <FaMapMarkerAlt style={{fontSize: "60px", margin: '0 auto'}}/>
                         <p className="text-center text-lg">Internet</p>
@@ -36,8 +36,8 @@ const Contact = () => {
                         <p className="text-center text-lg">ctfcommunitybd@gmail.com</p>
                     </div>
                     <div className = "px-7 py-3">
-                        <FaYoutube style={{fontSize: "60px", margin: '0 auto'}}/>
-                        <p className="text-center text-lg"><a href="https://www.youtube.com/channel/UCMy-tw0qXKSkYgTLJ1R9rqw/videos">CTF Community Bangladesh</a> </p>
+                        <FaPhone style={{fontSize: "60px", margin: '0 auto'}}/>
+                        <p className="text-center text-lg">+8801833*****3</p>
                     </div>
                 </div>
                 <div className="contact-form py-4">

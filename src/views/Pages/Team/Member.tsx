@@ -5,11 +5,11 @@ import { BsLinkedin } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
 import { BsTwitter } from "react-icons/bs";
 type ParaType = {
-    email: string;
+    username: string;
 }
 const Member = () => {
-    const {email} = useParams<ParaType>()
-    // console.log(email);
+    const {username} = useParams<ParaType>()
+    console.log(username);
     const [member, setMember] = useState<MemberType[]>([])
     // const [data, setData] = useState<MemberType>({})
     useEffect(()=> {
@@ -18,7 +18,7 @@ const Member = () => {
         .then(data => setMember(data))
     }, [])
     console.log(member);
-    const memberData = member.find(data => data.email === email)
+    const memberData = member.find(data => data.username === username)
     // setData(memberData)
     // const {name, role, desc, img, facebook, twitter, github, linkedin} = data
     

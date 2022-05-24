@@ -17,14 +17,16 @@ const About = () => {
  
     return (
         <div id='about' className='grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-7 about-background'>
-            <div className="my-auto py-7 col-span-3  flex items-center justify-center relative px-14">
+            <div className="my-auto py-7 col-span-3 flex items-center justify-center relative sm:px-2 lg:px-14">
                 <animated.div style={props} className="outer-circle">                   
                 </animated.div>
                 <div className="animate-logo">
                     <img src={logo} alt="" />
                 </div>
             </div>
-            <div className="px-14 my-auto col-span-4">
+
+
+            <div style={{paddingLeft: '20px'}} className="lg:px-14 sm:px-8 my-auto lg:col-span-4">
                 <h1 className="text-gray-600 text-xl font-bold">About</h1>
                 <div className="text-green-700">
                     <TextAnimation toggle={flip} text="Ctf Bangladesh" />
