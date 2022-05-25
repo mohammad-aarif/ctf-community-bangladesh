@@ -28,4 +28,6 @@ declare module 'baffle-react' {
     website: string;
     achievment: string;
     username: string;
+    certification: string;
+    type: string;
 }

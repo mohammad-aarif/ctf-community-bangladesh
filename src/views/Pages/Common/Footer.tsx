@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <div className='bg-black py-5'>
             <img className='w-16 mx-auto' src="https://i.ibb.co/82dQW7f/ctfbd.png" alt="" />
-            <p className='text-gray-500 font-medium text-center'> &copy; CTF Bangladesh Community 2022</p>
+            <p className='text-gray-500 font-medium text-center'> &copy; CTF Community Bangladesh 2022</p>
             <p className='text-green-500 text-center'>Join Our <a href="https://discord.gg/h7r58TpKVs">Discord</a></p>
 
             <div className="flex py-3 items-center justify-center">
